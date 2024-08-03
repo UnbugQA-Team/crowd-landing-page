@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import Plansom from '@/images/Plansom.svg'
-import Avatar from '@/images/Avatar-Plansom.svg'
+import Avatar from '@/images/Avatar.jpg'
 function QuoteIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg aria-hidden="true" width={105} height={78} {...props}>

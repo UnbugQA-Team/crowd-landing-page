@@ -7,7 +7,7 @@ import VendorStack from '@/images/logos/vendorstack.svg'
 import TechWave from '@/images/logos/techwave.svg'
 import FlickWheel from '@/images/logos/flickwheel.svg'
 import Kweeq from '@/images/kweeq.svg'
-import HeroImage from '@/images/Hero-image.svg'
+import HeroImage from '@/images/feature-1.jpg'
 export function Hero() {
   return (
     <div className="mx-auto max-w-[1440px]">

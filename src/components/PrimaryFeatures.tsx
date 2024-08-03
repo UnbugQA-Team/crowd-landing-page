@@ -7,10 +7,10 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 
-import Feature1 from '@/images/feature-image-1.svg'
-import Feature2 from '@/images/feature-image-2.svg'
-import Feature3 from '@/images/feature-image-3.svg'
-import Feature4 from '@/images/feature-image-4.svg'
+import Feature1 from '@/images/feature-2.jpg'
+import Feature2 from '@/images/feature-3.jpg'
+import Feature3 from '@/images/feature-4.jpg'
+import Feature4 from '@/images/feature-5.jpg'
 
 export function PrimaryFeatures() {
   return (

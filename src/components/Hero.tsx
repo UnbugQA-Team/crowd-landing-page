@@ -3,10 +3,10 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 // import Sentinel from '~/public/images/logos/sentinel.t'
-import VendorStack from '~/public/images/logos/vendorstack.svg'
-import TechWave from '~/public/images/logos/techwave.svg'
-import FlickWheel from '~/public/images/logos/flickwheel.svg'
-import Kweeq from '~/public/images/kweeq.svg'
+import VendorStack from '~/public/images/logos/VendorStack'
+import TechWave from '~/public/images/logos/TechWave'
+import FlickWheel from '~/public/images/logos/Flickwheel'
+import Kweeq from '~/public/images/logos/Kweeq'
 import HeroImage from '~/public/images/feature-1.jpg'
 import Sentinel from '~/public/images/logos/Sentinel'
 export function Hero() {
@@ -42,20 +42,21 @@ export function Hero() {
 
           <ul
             role="list"
-            className="mx-auto mt-8 grid max-w-[772px] grid-cols-2 items-center justify-between gap-x-4 gap-y-3 lg:grid-cols-5"
+            className="mx-auto mt-8 flex flex-wrap items-center justify-center gap-4 gap-y-3 lg:gap-x-8"
           >
             {[
               { name: 'Sentinel', logo: <Sentinel /> },
-              // { name: 'vendorstack', logo: VendorStack },
-              // { name: 'techwave', logo: TechWave },
-              // { name: 'flickwheel', logo: FlickWheel },
-              // { name: 'kweeq', logo: Kweeq },
+              { name: 'vendorstack', logo: <VendorStack /> },
+              { name: 'techwave', logo: <TechWave /> },
+              { name: 'flickwheel', logo: <FlickWheel /> },
+              { name: 'kweeq', logo: <Kweeq /> },
             ].map((company, groupIndex) => (
               <li
                 key={groupIndex}
-                className={` ${groupIndex === 4 ? 'col-span-2 mx-auto lg:col-span-1' : ''} `}
+                className={` ${groupIndex === 4 ? '' : 'w-max'} `}
               >
                 {company.logo}
+                {/* col-span-2 mx-auto lg:col-span-1 */}
                 {/* <Image src={company.logo} alt={company.name} unoptimized /> */}
               </li>
             ))}

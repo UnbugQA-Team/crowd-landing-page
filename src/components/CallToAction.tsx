@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-call-to-action.jpg'
-import Slack from '~/public/images/slack.svg'
-import Zapier from '~/public/images/zapier.svg'
+// import backgroundImage from '@/images/background-call-to-action.jpg'
+import Slack from '~/public/images/Slack'
+import Zapier from '~/public/images/Zapier'
 
 export function CallToAction() {
   return (
@@ -19,7 +19,7 @@ export function CallToAction() {
         </p>
         <div className="mb-24 mt-12 flex flex-col items-center justify-center gap-8 lg:mt-16 lg:flex-row">
           <span className="flex max-w-[21.5rem] flex-col items-center justify-center text-center">
-            <Image src={Zapier} alt="zapier" />
+            <Zapier />
             <p className="mt-4 text-lg font-semibold text-[#101828] lg:text-xl">
               Zapier
             </p>
@@ -29,7 +29,7 @@ export function CallToAction() {
             </p>
           </span>
           <span className="flex max-w-[21.5rem] flex-col items-center justify-center text-center">
-            <Image src={Slack} alt="slack" />
+            <Slack />
             <p className="mt-4 text-lg font-semibold text-[#101828] lg:text-xl">
               Slack
             </p>

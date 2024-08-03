@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-call-to-action.jpg'
-import Slack from '@/images/slack.svg'
-import Zapier from '@/images/zapier.svg'
+import Slack from '~/public/images/slack.svg'
+import Zapier from '~/public/images/zapier.svg'
 
 export function CallToAction() {
   return (

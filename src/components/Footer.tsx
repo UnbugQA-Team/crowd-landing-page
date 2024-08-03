@@ -4,9 +4,9 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 import Image from 'next/image'
-import X from '@/images/x.svg'
-import LinkedIn from '@/images/linkedin.svg'
-import Instagram from '@/images/instagram.svg'
+import X from '~/public/images/x.svg'
+import LinkedIn from '~/public/images/linkedin.svg'
+import Instagram from '~/public/images/instagram.svg'
 
 export function Footer() {
   const company = [

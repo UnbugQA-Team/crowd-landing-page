@@ -19,10 +19,10 @@ export function Testimonials() {
           <Image src={Plansom} alt="plansom-logo" />
         </div>
         <p className="my-8 text-base font-medium lg:text-xl">
-          “Recently, I created beta test campaign for my AI Tool - Plansom on
+          {`“Recently, I created beta test campaign for my AI Tool - Plansom on
           Crowd. Crowd has great features if you're looking to create
           interactive surveys, beta tests, feedback campaigns for your team. I
-          am using daily for beta tests.”
+          am using daily for beta tests.”`}
         </p>
         <div>
           <Image src={Avatar} alt="plansom-ceo" />

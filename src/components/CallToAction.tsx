@@ -46,8 +46,8 @@ export function CallToAction() {
             Start gathering insights today
           </p>
           <p className="mt-4 text-lg lg:text-xl">
-            With Crowd, you're not just gathering data; you're propelling your
-            business forward. Experience comprehensive insights in a snap.
+            {`With Crowd, you're not just gathering data; you're propelling your
+            business forward. Experience comprehensive insights in a snap.`}
           </p>
         </div>
         <Button

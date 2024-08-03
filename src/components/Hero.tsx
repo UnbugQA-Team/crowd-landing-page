@@ -29,7 +29,7 @@ export function Hero() {
             Get started for free
           </Button>
         </div>
-        <div className="px-[12px]">
+        <div className="max-w-[712px] px-[12px]">
           <Image src={HeroImage} alt="hero-image" />
         </div>
       </section>

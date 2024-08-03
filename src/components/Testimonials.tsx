@@ -25,7 +25,11 @@ export function Testimonials() {
           am using daily for beta tests.”`}
         </p>
         <div>
-          <Image src={Avatar} alt="plansom-ceo" />
+          <Image
+            src={Avatar}
+            alt="plansom-ceo"
+            className="h-16 w-16 rounded-full"
+          />
         </div>
         <p className="mt-4 text-lg font-semibold">Anshika Awasthi</p>
         <p className="text-[#99CCFF]">Sales Marketing Executive, Plansom</p>

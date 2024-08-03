@@ -25,12 +25,12 @@ export function PrimaryFeatures() {
             your website or app for better performance.
           </p>
         </div>
-        <div className="mt-10 lg:mt-0">
+        <div className="mt-10 max-w-[737px] lg:mt-0">
           <Image src={Feature1} alt="feature-image" />
         </div>
       </section>
       <section className="mt-16 flex flex-col-reverse items-center gap-24 px-4 text-center lg:mt-8 lg:flex-row lg:px-0 lg:text-left">
-        <div className="-mt-10 lg:mt-0">
+        <div className="-mt-10 max-w-[658px] lg:mt-0">
           <Image src={Feature2} alt="feature-image" />
         </div>
         <div className="w-full max-w-[32rem]">
@@ -56,13 +56,13 @@ export function PrimaryFeatures() {
             disrupting the user experience.
           </p>
         </div>
-        <div className="mt-10 lg:mt-0">
+        <div className="mt-10 max-w-[733px] lg:mt-0">
           <Image src={Feature3} alt="feature-image" />
         </div>
       </section>
 
       <section className="mt-12 flex flex-col-reverse items-center justify-between px-4 text-center lg:mb-[112px] lg:ml-[109px] lg:mr-[44px] lg:mt-8 lg:flex-row lg:px-0 lg:py-[92px] lg:text-left">
-        <div className="mt-10 lg:mt-0">
+        <div className="mt-10 max-w-[554px] lg:mt-0">
           <Image src={Feature4} alt="feature-image" />
         </div>
         <div className="w-full max-w-[31rem]">

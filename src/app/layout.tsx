@@ -48,36 +48,32 @@ export default function RootLayout({
             `,
           }}
         />
-         <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      fetch(
-        "https://api.v2.crowdapp.io/workspace/script?pid=a53e3a79-5cb2-45bb-a294-dbf3e2fc9042"
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          data.data.forEach((e) => {
-            const sc = document.createElement("script");
-            if (e.src) {
-              sc.src = e.src;
-            }
-            if (e.defer) {
-              sc.defer = true;
-            }
-            e.attributes.forEach((a) => {
-              sc.setAttribute(a.name, a.value);
+     <script
+    dangerouslySetInnerHTML={{
+            __html: `
+            (function () {
+        fetch(
+          "https://api.v2.crowdapp.io/workspace/script?pid=a53e3a79-5cb2-45bb-a294-dbf3e2fc9042"
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            data.data.forEach((e) => {
+              const sc = document.createElement("script");
+              e.src ? (sc.src = e.src) : () => {};
+              e.defer ? (sc.defer = true) : () => {};
+              e.attributes.forEach((a) => {
+                sc.setAttribute(a.name, a.value);
+              });
+              e.text ? (sc.text = e.text) : () => {};
+              e.type ? (sc.type = e.type) : () => {};
+              document.head.appendChild(sc);
             });
-            if (e.text) {
-              sc.text = e.text;
-            }
-            if (e.type) {
-              sc.type = e.type;
-            }
-            document.head.appendChild(sc);
-          });
-        })
-        .catch((error) => console.error("Error loading scripts:", error));
-    });
-  </script>
+          })
+          .catch((error) => console.error("Error loading scripts:", error));
+      })();
+            `,
+          }}
+/>
       </head>
       <body className="flex h-full flex-col">{children}</body>
     </html>

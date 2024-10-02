@@ -48,6 +48,28 @@ export default function RootLayout({
             `,
           }}
         />
+           <script>
+      (function () {
+        fetch(
+          "https://api.v2.crowdapp.io/workspace/script?pid=a53e3a79-5cb2-45bb-a294-dbf3e2fc9042"
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            data.data.forEach((e) => {
+              const sc = document.createElement("script");
+              e.src ? (sc.src = e.src) : () => {};
+              e.defer ? (sc.defer = true) : () => {};
+              e.attributes.forEach((a) => {
+                sc.setAttribute(a.name, a.value);
+              });
+              e.text ? (sc.text = e.text) : () => {};
+              e.type ? (sc.type = e.type) : () => {};
+              document.head.appendChild(sc);
+            });
+          })
+          .catch((error) => console.error("Error loading scripts:", error));
+      })();
+    </script>
       </head>
       <body className="flex h-full flex-col">{children}</body>
     </html>
